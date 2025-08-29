@@ -496,3 +496,29 @@ img {
     justify-content: center;
   }
 }
+
+@media (max-width: 375px) {
+  #header {
+    padding: 10px 5px;
+  }
+
+  #hero h1{
+    font-size:  25px;
+  }
+
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  .section-p1 {
+    padding: 15px;
+  }
+
+  #product1 .pro {
+    min-width: 90%;
+    width: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
