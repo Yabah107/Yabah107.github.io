@@ -3,6 +3,11 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="application-name" content="Tech2etc Ecommerce Tutorial">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="full-screen" content="true">
+        <meta name="x5-fullscreen" content="true">
+        <link rel="short icon" type="x-icon" href="img/logo.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tech2etc Ecommerce Tutorial</title>
@@ -14,7 +19,7 @@
     <body>
 
         <section id="header">
-            <a herf="="><img src="img/logo.png" class="logo" alt=""></a>
+        <img src="img/logo.png" class="logo" alt="">
 
             <div>
                 <ul id="navbar">
@@ -24,8 +29,21 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Cantact</a></li>
                     <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-                    <li><a href="http://127.0.0.1:5500/login.html">Login/Sign Up</a></li>
+                    <li><a href="login.html">Login/Sign Up</a></li>
                 </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outden"></i>
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                <div class="dropdown">
+                    <button class="optionsbtn"> &#9778;</button>
+                    <div class="options">
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="about.html">Aboout</a>
+                        <a href="contact.html">contact</a><br>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -34,7 +52,7 @@
             <h2>Super value deals</h2>
             <h1>On all products</h1>
             <p>Save more with coupons & up to 70% off! </p>
-            <button>Shop Now</button>
+            <a href="shop.html"><button>Shop Now</button></a>
         </section>
 
         <section id="feature" class="section-p1">
@@ -67,26 +85,87 @@
         <section id="product1" class="section-p1">
             <h2>Featured Products</h2>
             <p>Summer Collection New Morden Design</p>
-            <div class="pro-contaPiner">
+            <div class="slider">
+            <div class="pro-container">
                 <div class="pro">
-                    <img src="img/products/f1.jpg" alt="">
+                    <img src="img/products/k1.jpg" alt="">
                     <div class="des">
                         <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>$78</h4>
+                        <h6>Suave</h6>
+                        <h4>₵200</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <a href="cart.html" class="button">
+                        <button>Add to Cart</button>
+                    </a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/k2.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h6>Barakkat Rouge</h6>
+                        <h4>₵190</h4>
+                    </div>
+                    <a href="cart.html" class="button">
+                        <button>Add to Cart</button>
+                    </a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/k3.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h6>Barakkat Rouge</h6>
+                        <h4>₵190</h4>
+                    </div>
+                    <a href="cart.html" class="button">
+                        <button>Add to Cart</button>
+                    </a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/k4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h6>Barakkat Rouge</h6>
+                        <h4>₵190</h4>
+                    </div>
+                    <a href="cart.html" class="button">
+                        <button>Add to Cart</button>
+                    </a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/k5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h6>Barakkat Rouge</h6>
+                        <h4>₵190</h4>
+                    </div>
+                    <a href="cart.html" class="button">
+                        <button>Add to Cart</button>
+                    </a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/k6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h6>Barakkat Rouge</h6>
+                        <h4>₵190</h4>
+                    </div>
+                    <a href="cart.html" class="button">
+                        <button>Add to Cart</button>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <script>
+            const bar = document.getElementById('bar');
+            const nav = document.getElementById('navbar');
+
+            if (bar) {
+                bar.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+            }
+        </script>
         <script src="script.js"></script>
     </body>
 
