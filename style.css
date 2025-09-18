@@ -48,6 +48,19 @@ p {
   margin: 40px 0;
 }
 
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
 body {
   width: auto;
   justify-content: center;
@@ -63,14 +76,13 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 9px 70px;
-    background: #e3e3e3;
+    background: #c8c9c9;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    
 }
 
 #navbar{
@@ -87,7 +99,7 @@ img {
 
 #navbar li a{
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
@@ -293,16 +305,29 @@ img {
 
 #product1{
   text-align: center;
-  background-color: #fff;
+  background-color: #40c6a2;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+#product1 .outer-container{
+  background: #f2f5f4;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#product1 .outer-container h2{
+  color: rgb(12, 12, 12);
+  text-align: start;
+}
+
 #product1 .pro{
   width: 23%;
-  min-width: 200px;
+  min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
   border-radius: 25px;
@@ -314,28 +339,23 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #fff;
+  position: relative;
 }
 
 #product1 .pro-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0 10px;
-  background-color: #fff;
-  align-items: center;
-  text-align: center;
-  border-radius: 0.5px;
-  margin: 5px 0;
+  justify-content: space-between;
+  padding-top: 26px;
 }
 
 #product1 .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 20px 20px 30px rgb(238, 235, 235);
 }
 
 #product1 .pro img{
-  width: 250px;
-  border-radius: 10px;
-  height: 200px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 #product1 .pro .des{
@@ -345,13 +365,7 @@ img {
 
 #product1 .pro .des span{
   color: #606063;
-  font-size: 12px;
-}
-
-#product1 .pro .des h5{
-  padding-top: 7px;
-  color: #1a1a1a;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #product1 .pro .des i{
@@ -366,12 +380,24 @@ img {
   color: #088178;
 }
 
+#product1 .pro .des h6{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e2929;
+}
+
 #product1 .pro button{
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #b1bfbe;
   width: 100px;
-  height: 25px;
-  border: none;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
   cursor: pointer;
   text-align: center;
 }
@@ -379,7 +405,43 @@ img {
 #product1 .pro button:hover{
   background-color: #088178;
   color: white;
+  transition: 0.2s ease;
 }
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/banner/b2.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4{
+  color: white;
+  font-size: 16px;
+}
+
+#banner h2{
+  color: white;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 span{
+  color: #ef3636;
+}
+
+#banner button:hover{
+  background-color: #088178;
+  color: white;
+}
+
 
 @media (max-width: 799px) {
   .section-p1 {
