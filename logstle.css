@@ -25,18 +25,17 @@ html {
 }
 
 #header {
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 70px;
+    background: #e3e3e3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 80px;
-    background: #f7f4f4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-    position: sticky;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
 }
 
 #navbar {
@@ -53,7 +52,7 @@ html {
 
 #navbar li a{
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
@@ -76,14 +75,14 @@ html {
 }
 
 #navbar button.btnlogin-popup{
-    width: 130px;
-    height: 50px;
+    width: 110px;
+    height: 40px;
     background: transparent;
     border: 2px solid #b7b4b4;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #938282;
     font-weight: 500;
     margin-left: 40px;
